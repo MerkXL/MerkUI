@@ -213,14 +213,10 @@ The `.mp4` files are missing from the game folder, or Windows cannot play them (
 **My antivirus flags `version.dll`.**
 MerkUI works by placing a `version.dll` in the game folder, which the game loads at start. That is a common way to mod a game, and also a pattern some antivirus programs warn about on principle. If you do not trust the file, do not install it. The full source code is included in the `Source` folder for anyone who wants to read or rebuild it.
 
-**The game crashes at start or at login after installing.**
-Remove `version.dll` (see Uninstall) to get back to a working game, then report it with the log file.
 
 **A slider seems stuck on certain values.**
 Buttons Per Row and Button Size only accept certain values on purpose. See the Action Bars section.
 
-**Some F10 buttons cannot be clicked.**
-An unlocked MerkUI element may be lying on top of the options window. Move the options window, or lock the element.
 
 ### Reporting a problem
 
@@ -231,17 +227,6 @@ Please include:
 - A screenshot if it is a visual problem.
 - The file `MerkUI_TeamBars_v233.log` from your game folder.
 
----
-
-## Known limitations
-
-- Built and tested on one client version and one machine.
-- Action bar rows are AO hotbar pages (see above), so buttons do not reflow when the layout changes.
-- The coloured quality frame AO draws on item and nano icons is replaced by a plain black 1 pixel frame on the action bars.
-- The Equip timer bar has no text. The game does not say which item is being equipped.
-- Raid Bars have had very little testing in a real raid.
-- The "Please wait..." box during login is hidden, and its Cancel button with it. A login that hangs ends on the game's own timeout.
-- The character list has not been tested with more characters than fit on the screen.
 
 ---
 
