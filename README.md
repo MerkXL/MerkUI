@@ -35,6 +35,19 @@ This repository holds the source code and the installer scripts. You do not need
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
 
 ---
+**All previews on:**
+<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/ba80e415-17ac-4ce8-a614-09b61e352c5d" />
+
+**Config in f10:**
+
+<img width="892" height="595" alt="F10" src="https://github.com/user-attachments/assets/891d7a07-d6b4-46d6-99fd-3d38def83aa9" />
+
+**Combat:**
+<img width="2559" height="1439" alt="Combat" src="https://github.com/user-attachments/assets/d8e8a7f9-ab55-4c64-9f23-7c51b472473e" />
+
+
+
+
 
 ## Requirements
 
