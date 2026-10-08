@@ -227,25 +227,6 @@ Please include:
 - A screenshot if it is a visual problem.
 - The file `MerkUI_TeamBars_v233.log` from your game folder.
 
-
----
-
-## For developers
-
-The `Source` folder contains everything needed to rebuild `version.dll`:
-
-- `status_bars_v340.c` and `status_bridges_v340.s`: the code.
-- `build_status_v340.py`: the build script. It needs Python 3 and a 32-bit GCC and binutils.
-- `version_v227_RelativeFonts.dll` and `version_v169_IndividualFontSizes.dll`: the base files the build starts from.
-
-Build with:
-
-```
-python3 build_status_v340.py
-```
-
-The result is `version_v340_TeamGroup.dll`. Rename it to `version.dll` to use it.
-
 ---
 
 ## Credits
