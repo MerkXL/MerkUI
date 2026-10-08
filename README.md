@@ -5,7 +5,7 @@ A custom user interface for Anarchy Online on the ProjectRK client.
 MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, adds buff and debuff trackers, combat text, a mission window and resizable action bars, gives the login and character screens a new look with moving backgrounds, and puts every setting in the game's own options window (F10).
 
 **Version:** v1
-**Status:** community release of a personal UI. It has been tested by one player on one machine. `Install.bat` and `Uninstall.bat` are new and have not been run on other machines yet. Back up before you install.
+**Status:** community release of a personal UI. It has only been tested by a couple of people. Back up before you install if you are unsure :) 
 
 ---
 
