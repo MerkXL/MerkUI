@@ -3,7 +3,7 @@
 
 # MerkUI
 
-[Download MerkUI Installer here for easier install & auto updates ](https://github.com/MerkXL/MerkUI/releases/tag/MerkUI-Installer)
+[(Recommended)Download MerkUI Installer here for easier install & auto updates ](https://github.com/MerkXL/MerkUI/releases/tag/MerkUI-Installer)
 
 
 [Latest Version here](https://github.com/MerkXL/MerkUI/releases/tag/v1.1.13)
