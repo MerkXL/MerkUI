@@ -4,11 +4,12 @@
 
 [Download the latest version here ](https://github.com/MerkXL/MerkUI/releases/tag/UI)
 
+
 A custom user interface for Anarchy Online on the ProjectRK client.
 
 MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, adds buff and debuff trackers, combat text, a mission window and resizable action bars, gives the login and character screens a new look with moving backgrounds, and puts every setting in the game's own options window (F10).
 
-**Version:** 1.0.0
+**Version:** 1.1.10
 **Status:** first community release of a personal UI, tested by a small number of players. Back up before you install.
 
 ---
@@ -18,27 +19,20 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | Area | What it does |
 |---|---|
 | **Status Bars** | HP, Nano, XP and Alien XP as separate bars you can size and place. XP shown as a percentage. Optional black text outline. |
-| **Target Bar** | Target name, level (coloured by difficulty) and HP in percent and numbers. Optional black text outline. |
+| **Target Bar** | Target name, level (in the same con colour AO's own Target Bar uses) and HP in percent and numbers. Optional black text outline. |
 | **Team Bars** | Six team member bars with HP and Nano. Click a bar to target that member. |
 | **Raid Bars** | Compact frames for the whole raid, shown when you are in a raid. |
 | **Timer Bars** | Attack, Special, Nano, Item and Reload timers in matching colours, plus an **Equip** bar that shows equip time. |
 | **Buffs and Debuffs** | Five independent trackers: Player Buffs, Player Debuffs, Target Buffs, Target Debuffs and Pet Buffs. Each has an icon that drains as the effect runs out, a timer, a tooltip and a duration filter. |
-| **Pet Bars** | A bar for each of your pets with its name, HP and Nano. Each pet's bar and buff group keep their own place, also when the pet is cast again. |
+| **Pet Bars** | A bar for each of your pets with its name and HP: Attack Pet 1 and 2, Healing Pet, Support Pet and Charmed Pet, each with its own place, size and text settings (or set them all at once under Size → Global). Click a bar to target that pet. Pet Buffs can show or hide each kind of pet. |
 | **Combat Text** | Damage dealt and healing received as floating text, with a separate large "sticky" number for critical hits. |
 | **Missions** | A mission window with description, rewards and item icons, and an on-screen mission tracker. |
 | **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. |
 | **Loading screen** | A custom loading image with a soft pulse. |
 | **Login screen** | A new login box and a moving background (video). |
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
-| **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed
+| **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed, its settings are under **F10 → MerkUI → Renderer**: presets and one page per section (Lighting, Shadows, HDR and effects, and so on). Changes apply at once and ao-vk saves them in `randy-vk.ini`. No AOReloaded `version.dll` is needed. Without ao-vk these pages are not shown. |
 
-**Preview shown here — everything can be customized to your liking.**
-<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/f7122b4d-8b59-4c42-a394-9f1440396466" />
-
-
-**Settings**
-
-<img width="891" height="599" alt="F10" src="https://github.com/user-attachments/assets/a62d276a-9924-4cdb-a01a-50b791a4c0a8" />
 ---
 
 ## Requirements
@@ -209,10 +203,10 @@ Please include:
 
 ---
 
+
 ## Credits
 
 Made by Merk.
-
-- Daddy & Dypfryst for testing
+- Daddy & Dypfryst for helping out testing.
 
 The Renderer pages use the settings interface of [ao-vk](https://github.com/wannabuh/ao-vk) and are built the way [AOReloaded](https://github.com/wannabuh/AOReloaded)'s Renderer tab builds them. Both are MIT licensed; see the `licenses` folder.
