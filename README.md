@@ -1,5 +1,6 @@
 
 
+
 # MerkUI
 
 [Download the latest version here ](https://github.com/MerkXL/MerkUI/releases/tag/UI)
@@ -33,7 +34,12 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
 | **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed, its settings are under **F10 → MerkUI → Renderer**: presets and one page per section (Lighting, Shadows, HDR and effects, and so on). Changes apply at once and ao-vk saves them in `randy-vk.ini`. No AOReloaded `version.dll` is needed. Without ao-vk these pages are not shown. |
 
----
+**With every preview enabled:**
+<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/f0351660-0eb5-404b-83c4-4d8790e841f2" />
+
+**F10 settings:**
+
+<img width="891" height="599" alt="F10" src="https://github.com/user-attachments/assets/1e41fb7a-cd9d-4fc0-ad79-acd90549c019" />
 
 ## Requirements
 
