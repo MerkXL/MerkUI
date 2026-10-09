@@ -33,7 +33,8 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed
 
 **Preview shown here — everything can be customized to your liking.**
-**<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/bdce2585-c97a-474f-ae54-1049d73c62fb" />
+<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/f7122b4d-8b59-4c42-a394-9f1440396466" />
+
 
 **Settings**
 
