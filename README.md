@@ -1,4 +1,5 @@
 
+
 # MerkUI
 
 A custom user interface for Anarchy Online on the ProjectRK client.
@@ -29,8 +30,12 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
 | **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed
 
-**Preview shown here — everything can be customized to your liking.
+**Preview shown here — everything can be customized to your liking.**
 **<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/bdce2585-c97a-474f-ae54-1049d73c62fb" />
+
+**Settings**
+
+<img width="891" height="599" alt="F10" src="https://github.com/user-attachments/assets/a62d276a-9924-4cdb-a01a-50b791a4c0a8" />
 ---
 
 ## Requirements
