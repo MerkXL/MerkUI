@@ -3,8 +3,10 @@
 
 # MerkUI
 
-[Download MerkUI Installer here ](https://github.com/MerkXL/MerkUI/releases/tag/MerkUI-Installer)
+[Download MerkUI Installer here for easier install & auto updates ](https://github.com/MerkXL/MerkUI/releases/tag/MerkUI-Installer)
 
+
+[Latest Version here](https://github.com/MerkXL/MerkUI/releases/tag/v1.1.13)
 
 A custom user interface for Anarchy Online on the ProjectRK client.
 
