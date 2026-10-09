@@ -2,7 +2,7 @@
 
 # MerkUI
 
-[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-MerkUI-00E5FF?style=for-the-badge&logo=github)](https://github.com/MerkXL/MerkUI/releases/tag/UI)
+[Download the latest version here ](https://github.com/MerkXL/MerkUI/releases/tag/UI)
 
 A custom user interface for Anarchy Online on the ProjectRK client.
 
