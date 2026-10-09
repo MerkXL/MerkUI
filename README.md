@@ -4,16 +4,8 @@ A custom user interface for Anarchy Online on the ProjectRK client.
 
 MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, adds buff and debuff trackers, combat text, a mission window and resizable action bars, gives the login and character screens a new look with moving backgrounds, and puts every setting in the game's own options window (F10).
 
-**Version:** v1
-**Status:** community release of a personal UI. It has only been tested by a couple of people, but it seems to be working fine. Do a back up of your files before you install if you are unsure :) 
-
----
-
-## Download
-
-Get the newest `MerkUI_..._Release.zip` from the [Releases page](../../releases/latest). That zip is all you need to install.
-
-This repository holds the source code and the installer scripts. You do not need to download it to use MerkUI.
+**Version:** 1.0.0
+**Status:** first community release of a personal UI, tested by a small number of players. Back up before you install.
 
 ---
 
@@ -26,28 +18,17 @@ This repository holds the source code and the installer scripts. You do not need
 | **Team Bars** | Six team member bars with HP and Nano. Click a bar to target that member. |
 | **Raid Bars** | Compact frames for the whole raid, shown when you are in a raid. |
 | **Timer Bars** | Attack, Special, Nano, Item and Reload timers in matching colours, plus an **Equip** bar that shows equip time. |
-| **Buffs and Debuffs** | Four independent trackers: Player Buffs, Player Debuffs, Target Buffs, Target Debuffs. Each has an icon that drains as the effect runs out, a timer, a tooltip and a duration filter. |
+| **Buffs and Debuffs** | Five independent trackers: Player Buffs, Player Debuffs, Target Buffs, Target Debuffs and Pet Buffs. Each has an icon that drains as the effect runs out, a timer, a tooltip and a duration filter. |
+| **Pet Bars** | A bar for each of your pets with its name, HP and Nano. Each pet's bar and buff group keep their own place, also when the pet is cast again. |
 | **Combat Text** | Damage dealt and healing received as floating text, with a separate large "sticky" number for critical hits. |
 | **Missions** | A mission window with description, rewards and item icons, and an on-screen mission tracker. |
 | **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. |
 | **Loading screen** | A custom loading image with a soft pulse. |
 | **Login screen** | A new login box and a moving background (video). |
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
+| **Renderer settings** | With the [ao-vk](https://github.com/wannabuh/ao-vk) renderer installed
 
 ---
-**All previews on:**
-<img width="2559" height="1439" alt="Preview" src="https://github.com/user-attachments/assets/ba80e415-17ac-4ce8-a614-09b61e352c5d" />
-
-**Config in f10:**
-
-<img width="892" height="595" alt="F10" src="https://github.com/user-attachments/assets/891d7a07-d6b4-46d6-99fd-3d38def83aa9" />
-
-**Combat:**
-<img width="2559" height="1439" alt="Combat" src="https://github.com/user-attachments/assets/d8e8a7f9-ab55-4c64-9f23-7c51b472473e" />
-
-
-
-
 
 ## Requirements
 
@@ -120,7 +101,7 @@ A good order for a first setup:
 
 1. **Timer Bars** → turn on *Preview Bars* and drag the timers where you want them.
 2. **Status Bars**, **Target Bar**, **Team Bars** → use each page's *Preview* to see the bars without needing a target or a team.
-3. **Buffs and Debuffs → General** → turn on *Preview All Buffs and Debuffs*. All four trackers appear with sample effects and a name label. Drag each one into place, then turn preview off.
+3. **Buffs and Debuffs → General** → turn on *Preview All Buffs and Debuffs*. All five trackers appear with sample effects and a name label. Drag each one into place, then turn preview off.
 4. **Action Bars** → enable the bars you want and set buttons, rows and size.
 5. **Combat Text** and **Missions** → enable and place.
 
@@ -150,22 +131,6 @@ One thing behaves differently from what you might expect. AO stores each page of
 
 ---
 
-## Your own backgrounds
-
-The login and character screens each use two files in the game folder:
-
-| Screen | Video | Still picture |
-|---|---|---|
-| Login | `MerkUI_LoginBackground.mp4` | `MerkUI_LoginBackground.bmp` |
-| Character | `MerkUI_CharacterBackground.mp4` | `MerkUI_CharacterBackground.bmp` |
-
-- The still picture is shown first, for the half second it takes to open the video. Make it the **first frame of your video**, or you will see it flash before the video starts.
-- The video loops, without sound. Use an ordinary H.264 `.mp4`. 1920 x 1080 at 30 frames per second is what MerkUI ships with.
-- The still picture must be a plain, uncompressed 24-bit `.bmp`. Any size works; 2048 x 1024 is what MerkUI uses inside, and the picture is stretched to fill the screen.
-- Delete an `.mp4` to get only the still picture. Delete the `.bmp` as well to get AO's own screen back.
-
----
-
 ## Updating
 
 1. Close the game.
@@ -192,7 +157,7 @@ It removes MerkUI's `version.dll`, pictures, videos and skin folder, and puts ba
 Two files in the game folder are left for you to delete if you want:
 
 - `MerkUITimerBars.ini`: your MerkUI settings.
-- `MerkUI_TeamBars_v233.log`: a log file.
+- `MerkUI.log`: a log file.
 
 ---
 
@@ -211,12 +176,16 @@ The `MerkUI_Skin` folder or the pictures are not next to `AnarchyOnline.exe`, or
 The `.mp4` files are missing from the game folder, or Windows cannot play them (see Requirements). The log file says which: look for lines with `video`.
 
 **My antivirus flags `version.dll`.**
-MerkUI works by placing a `version.dll` in the game folder, which the game loads at start. That is a common way to mod a game, and also a pattern some antivirus programs warn about on principle. If you do not trust the file, do not install it. The full source code is included in the `Source` folder for anyone who wants to read or rebuild it.
+MerkUI works by placing a `version.dll` in the game folder, which the game loads at start. That is a common way to mod a game, and also a pattern some antivirus programs warn about on principle. If you do not trust the file, do not install it. The full source code is published with each release (the source zip) for anyone who wants to read or rebuild it.
 
+**The game crashes at start or at login after installing.**
+Remove `version.dll` (see Uninstall) to get back to a working game, then report it with the log file.
 
 **A slider seems stuck on certain values.**
 Buttons Per Row and Button Size only accept certain values on purpose. See the Action Bars section.
 
+**Some F10 buttons cannot be clicked.**
+An unlocked MerkUI element may be lying on top of the options window. Move the options window, or lock the element.
 
 ### Reporting a problem
 
@@ -225,10 +194,14 @@ Please include:
 - The MerkUI version (top of this file).
 - What you did, and what happened.
 - A screenshot if it is a visual problem.
-- The file `MerkUI_TeamBars_v233.log` from your game folder.
+- The file `MerkUI.log` from your game folder.
 
 ---
 
 ## Credits
 
 Made by Merk.
+
+- Daddy & Dypfryst for testing
+
+The Renderer pages use the settings interface of [ao-vk](https://github.com/wannabuh/ao-vk) and are built the way [AOReloaded](https://github.com/wannabuh/AOReloaded)'s Renderer tab builds them. Both are MIT licensed; see the `licenses` folder.
