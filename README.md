@@ -45,7 +45,8 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 
 
 **Align function**
-<img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/9e070f17-307d-47da-9dd4-eea89f890ff5" />
+<img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/cd82148d-988d-4798-9793-5a12cfde0353" />
+
 
 
 
