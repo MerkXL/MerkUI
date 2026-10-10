@@ -52,7 +52,7 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 
 ## Requirements
 
-- Anarchy Online on the **ProjectRK** client, Windows.
+- Anarchy Online on the **ProjectRK** client, Windows and Linux
 - The exact client version MerkUI was built for. On any other version MerkUI's code checks the game files, finds they do not match and does nothing. The game then runs with only the graphics and layout files, without the bars and trackers.
 - For the moving backgrounds: Windows' own video support (Media Foundation). It is part of normal Windows 10 and 11. On the "N" editions of Windows it has to be added with Microsoft's Media Feature Pack. Without it you get still pictures instead.
 
