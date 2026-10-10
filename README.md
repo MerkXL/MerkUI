@@ -43,6 +43,11 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 
 <img width="891" height="599" alt="F10" src="https://github.com/user-attachments/assets/1e41fb7a-cd9d-4fc0-ad79-acd90549c019" />
 
+
+**Align function**
+<img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/73baf425-1438-4c10-aee4-944370e318bd" />
+
+
 ## Requirements
 
 - Anarchy Online on the **ProjectRK** client, Windows.
