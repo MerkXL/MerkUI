@@ -1,6 +1,7 @@
 
 
 
+
 # MerkUI
 
 [(Recommended)Download MerkUI Installer here for easier install & auto updates ](https://github.com/MerkXL/MerkUI/releases/tag/MerkUI-Installer)
@@ -30,7 +31,7 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | **Pet Bars** | A bar for each of your pets with its name and HP: Attack Pet 1 and 2, Healing Pet, Support Pet and Charmed Pet, each with its own place, size and text settings (or set them all at once under Size → Global). Click a bar to target that pet. Pet Buffs can show or hide each kind of pet. |
 | **Combat Text** | Damage dealt and healing received as floating text, with a separate large "sticky" number for critical hits. |
 | **Missions** | A mission window with description, rewards and item icons, and an on-screen mission tracker. |
-| **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. |
+| **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. Quick Keybindings function and visible keybinding text and keypresses |
 | **Loading screen** | A custom loading image with a soft pulse. |
 | **Login screen** | A new login box and a moving background (video). |
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
