@@ -22,16 +22,23 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 
 | Area | What it does |
 |---|---|
-| **Status Bars** | HP, Nano, XP and Alien XP as separate bars you can size and place. XP shown as a percentage. Optional black text outline. |
-| **Target Bar** | Target name, level (in the same con colour AO's own Target Bar uses) and HP in percent and numbers. Optional black text outline. |
+| **Themes** | 13 colour themes: Merk Classic, Dark, Pure Black, Neutral Moss, Rose Quartz, Royal Blue, Crimson Wine, Jade, Sky, Saffron, Black and Gold, Scarlet and Black and Red. Everything MerkUI draws changes at once; AO's own windows follow after a full client restart. Buffs, debuffs, HP, Nano and the login and character screens keep their own colours. |
+| **MerkUI frame on AO windows** | Every AO window with a title bar (Team, Missions, Nano Programs, Friends, ...) gets MerkUI's frame, title row and buttons. |
+| **Chat Windows** | A new look for AO's chat: dark glass, a thin edge, flat text tabs and a clean input line. Close, info and pin show under the mouse. Its own font, size, bold and outline for the chat text and for the tabs. |
+| **Minimap** | A square map around your character (AO's Playfield Map or the planet map), with zone and coordinates, mouse wheel zoom, a /waypoint destination with an arrow, a clock, the DEF / AGG slider and NCU, and a drawer with the window buttons and your credits. |
+| **Skills** | MerkUI's own Skills window: each skill a bar toward its maximum, names in AO's cost colours, Shift+click for 10, Ctrl+click to max or clear, hold to repeat, an info panel, Reset this skill, Suggested IP, Reset all and Save Changes. |
+| **Inventory** | Inventory, bank and bags in MerkUI's frame with flat slots, and a footer with used / total slots and your credits. |
+| **Status Bars** | HP, Nano, XP and Alien XP as separate bars you can size and place, each with its own Show Text. XP shown as a percentage. Optional black text outline. |
+| **Target Bar** | Target name, level (in the same con colour AO's own Target Bar uses) and HP in percent and numbers. Two extra frames, Fight Target and Target of Target, each Text Only or Text + HP Bar. |
 | **Team Bars** | Six team member bars with HP and Nano. Click a bar to target that member. |
 | **Raid Bars** | Compact frames for the whole raid, shown when you are in a raid. |
 | **Timer Bars** | Attack, Special, Nano, Item and Reload timers in matching colours, plus an **Equip** bar that shows equip time. |
-| **Buffs and Debuffs** | Five independent trackers: Player Buffs, Player Debuffs, Target Buffs, Target Debuffs and Pet Buffs. Each has an icon that drains as the effect runs out, a timer, a tooltip and a duration filter. |
-| **Pet Bars** | A bar for each of your pets with its name and HP: Attack Pet 1 and 2, Healing Pet, Support Pet and Charmed Pet, each with its own place, size and text settings (or set them all at once under Size → Global). Click a bar to target that pet. Pet Buffs can show or hide each kind of pet. |
+| **Buffs and Debuffs** | Short Buffs (five minutes or less) and Long Buffs, Player Debuffs, Target Buffs, Target Debuffs, Pet Buffs and Pet Debuffs, each in its own place. Icon + Bar or Icon Only (with a 1 px border), grow up or left, up to 30 visible, a timer you can hide, a draining icon, a tooltip and a duration filter. Buffs stay cyan and debuffs red in every theme. |
+| **Pet Bars** | A bar for each of your pets with its name and HP: Attack Pet 1 and 2, Healing Pet, Support Pet and Charmed Pet 1 and 2, each with its own place, size and text settings (or set them all at once under Size → Global). Click a bar to target that pet. A pet out of range keeps its bar. |
 | **Combat Text** | Damage dealt and healing received as floating text, with a separate large "sticky" number for critical hits. |
 | **Missions** | A mission window with description, rewards and item icons, and an on-screen mission tracker. |
-| **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. Quick Keybindings function and visible keybinding text and keypresses |
+| **Action Bars** | Up to five bars, each with its own number of buttons, buttons per row, button size and spacing. Keybind text on each button, and Quick Keybindings: hover a button and press a key to bind it. |
+| **Align Grid** | A screen-wide grid with the exact middle marked, to line up bars by eye. |
 | **Loading screen** | A custom loading image with a soft pulse. |
 | **Login screen** | A new login box and a moving background (video). |
 | **Character screen** | A new character list that grows with the number of characters, a new button bar, and a moving background. The "Please wait..." box during login is hidden. |
@@ -62,9 +69,23 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 
 ## Install
 
-Everything goes in **one** place: the game folder, the one that contains `AnarchyOnline.exe`.
+1. **Close the game.**
+2. Download **`MerkUI-Installer.exe`** (see the link above) and start it.
+   - It finds the game folder by itself and shows what it found. **Change folder** lets you pick another one.
+   - It waits while the game is running and tells you when it can go on.
+   - A `version.dll` from another mod is kept as a backup, and Uninstall puts it back.
+   - With **Put the skin straight into the game's profiles** ticked (the default), MerkUI is active on the **first** start.
+   - **Select MerkUI as GUI skin for me** is experimental: it sets the skin in the game's own settings file. If the launcher still shows another skin, choose MerkUI there.
+   - If Windows does not let it write to the game folder, it offers **Restart as administrator** and carries on by itself.
+4. Do what the last page says under **Next**. For a new install that is usually: choose **MerkUI** in the **PRK launcher** under **Settings > GUI > GUI Skin**, then start the game.
 
-Anarchy Online keeps GUI skins in a profile folder under `%LOCALAPPDATA%\Funcom\Anarchy Online`, and there can be several of those with code names. You do not have to find the right one: MerkUI asks the game which one it uses and copies its skin there by itself.
+The installer also has **Repair**, **Uninstall** and **Open log** (opens `MerkUI.log` from the game folder).
+
+**Updates from GitHub.** Each time it opens, the installer asks [github.com/MerkXL/MerkUI](https://github.com/MerkXL/MerkUI/releases) whether there is a newer release. If there is, the first line says so (with the release notes), and **Download and install** fetches it, checks that it really comes from MerkUI (every release is signed with MerkUI's own key; anything else is refused), unpacks it and hands over to the new installer, which installs it straight away. Nothing is downloaded until you press the button. Without internet the installer simply works from its own files.
+
+Windows may warn about the installer the first time (SmartScreen: "Windows protected your PC"), because it is not signed with a paid certificate. Choose **More info > Run anyway**, or use `Install.bat` below, which does the same job and can be read in Notepad.
+
+### With Install.bat
 
 1. **Close the game.**
 2. Unpack the whole zip somewhere, for example your Desktop.
@@ -82,38 +103,6 @@ On the very first start, before you have chosen the skin, the login and characte
 To check that it worked: press **F10** in game. There should be a **MerkUI** entry in the list on the left.
 
 MerkUI's skin comes with its own starting values for a fresh profile: the Control Center fade settings (low fade, high fade, fade delay) at their maximum, and all sound volumes at 50%. Settings you have already changed yourself are kept.
-
-### Manual install
-
-1. Close the game.
-2. If your game folder already has a `version.dll`, rename it to `version.dll.bak`.
-3. Copy everything inside the `files` folder into the game folder, next to `AnarchyOnline.exe`. Then follow steps 4 to 7 above.
-
-When you are done it should look like this:
-
-```
-<game folder>\
-  AnarchyOnline.exe
-  version.dll
-  MerkUI_Skin\                      <- the skin, copied on by MerkUI itself
-  MerkUI_LoginBackground.bmp
-  MerkUI_LoginBackground.mp4
-  MerkUI_CharacterBackground.bmp
-  MerkUI_CharacterBackground.mp4
-  MerkUI_LoginFrame.bmp
-  MerkUI_CharacterPanelTop.bmp
-  MerkUI_CharacterPanelMiddle.bmp
-  MerkUI_CharacterPanelBottom.bmp
-  MerkUI_CharacterBar.bmp
-```
-
-After the first start the skin is also here, put there by MerkUI:
-
-```
-%LOCALAPPDATA%\Funcom\Anarchy Online\<code>\client\Gui\MerkUI\
-```
-
----
 
 ## First setup
 
