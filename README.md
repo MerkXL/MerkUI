@@ -13,7 +13,8 @@ A custom user interface for Anarchy Online on the ProjectRK client.
 MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, adds buff and debuff trackers, combat text, a mission window and resizable action bars, gives the login and character screens a new look with moving backgrounds, and puts every setting in the game's own options window (F10).
 
 
-<img width="2400" height="1858" alt="image" src="https://github.com/user-attachments/assets/dbb7f639-27bc-4809-a4c0-d2074bfdfe78" />
+<img width="2400" height="2570" alt="image" src="https://github.com/user-attachments/assets/52d9c5d9-6541-4e45-9d76-f713338aa035" />
+
 
 
 ---
@@ -27,13 +28,15 @@ MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, 
 | **Chat Windows** | A new look for AO's chat: dark glass, a thin edge, flat text tabs and a clean input line. Close, info and pin show under the mouse. Its own font, size, bold and outline for the chat text and for the tabs. |
 | **Minimap** | A square map around your character (AO's Playfield Map or the planet map), with zone and coordinates, mouse wheel zoom, a /waypoint destination with an arrow, a clock, the DEF / AGG slider and NCU, and a drawer with the window buttons and your credits. |
 | **Skills** | MerkUI's own Skills window: each skill a bar toward its maximum, names in AO's cost colours, Shift+click for 10, Ctrl+click to max or clear, hold to repeat, an info panel, Reset this skill, Suggested IP, Reset all and Save Changes. |
-| **Inventory** | Inventory, bank and bags in MerkUI's frame with flat slots, and a footer with used / total slots and your credits. |
+| **Inventory** | Inventory, bank and bags in MerkUI's frame with flat slots, and a footer with used / total slots and your credits. Also a few QoL settings for bringing items in and out of bags. |
 | **Status Bars** | HP, Nano, XP and Alien XP as separate bars you can size and place, each with its own Show Text. XP shown as a percentage. Optional black text outline. |
 | **Target Bar** | Target name, level (in the same con colour AO's own Target Bar uses) and HP in percent and numbers. Two extra frames, Fight Target and Target of Target, each Text Only or Text + HP Bar. |
 | **Team Bars** | Six team member bars with HP and Nano. Click a bar to target that member. |
 | **Raid Bars** | Compact frames for the whole raid, shown when you are in a raid. |
 | **Timer Bars** | Attack, Special, Nano, Item and Reload timers in matching colours, plus an **Equip** bar that shows equip time. |
 | **Buffs and Debuffs** | Short Buffs (five minutes or less) and Long Buffs, Player Debuffs, Target Buffs, Target Debuffs, Pet Buffs and Pet Debuffs, each in its own place. Icon + Bar or Icon Only (with a 1 px border), grow up or left, up to 30 visible, a timer you can hide, a draining icon, a tooltip and a duration filter. Buffs stay cyan and debuffs red in every theme. |
+| **Renderer settings** |
+| **Camera Settings** | bunch of new camera settings. Run with LMB + RMB, autocentering with RMB + drag etc and much more.
 | **Pet Bars** | A bar for each of your pets with its name and HP: Attack Pet 1 and 2, Healing Pet, Support Pet and Charmed Pet 1 and 2, each with its own place, size and text settings (or set them all at once under Size → Global). Click a bar to target that pet. A pet out of range keeps its bar. |
 | **Combat Text** | Damage dealt and healing received as floating text, with a separate large "sticky" number for critical hits. |
 | **Missions** | A mission window with description, rewards and item icons, and an on-screen mission tracker. |
