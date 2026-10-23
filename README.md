@@ -11,6 +11,7 @@
 A custom user interface for Anarchy Online on the ProjectRK client.
 
 MerkUI replaces AO's status, target, team and timer bars with clean, flat ones, adds buff and debuff trackers, combat text, a mission window and resizable action bars, gives the login and character screens a new look with moving backgrounds, and puts every setting in the game's own options window (F10).
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/460cbb92-5c83-461c-9d64-ef2797b64e1b" />
 
 
 <img width="2400" height="2050" alt="image" src="https://github.com/user-attachments/assets/2ecb0146-eab4-4366-9ea0-8cf0f18908cc" />
